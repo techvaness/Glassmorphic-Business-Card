@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <title>Glassmorphic Business Card</title>
+  </head>
+  <body>
+    <main>
+      <section class="glass">
+        <div class="dashboard">
+          <div class="user">
+            <img src="img/profile.png" alt="avatar" />
+            <h3>Tech Van-Ess</h3>
+            <p>Front End Developer</p>
+          </div>
+
+          <div class="links">
+            <ul>
+              <li class="link">
+                <a
+                  href="https://instagram.com/techvaness"
+                  target="_blank"
+                  ><i class="fa fa-instagram" aria-hidden="true"></i
+                ></a>
+                <a href="https://instagram.com/techvaness" target="_blank" class="social-text">Instagram</a>
+              </li>
+              <li class="link">
+                <a href="https://github.com/techvaness" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                <a href="https://github.com/techvaness" target="_blank" class="social-text">Github</a>
+              </li>
+              <li class="link">
+                <a href="https://twitter.com/techvaness" target="_blank"
+                  ><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  <a href="https://twitter.com/TECHVANES" target="_blank" class="social-text">Twitter</a>
+              </li>
+              <li class="link">
+                <a href="mailto:dm@techvaness.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                <a href="mailto:dm@techvaness.com" target="_blank" class="social-text">E-mail</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="codes">
+          <div class="status">
+            <h1>Stack</h1>
+            <input type="text" />
+          </div>
+
+          <ul class="cards">
+            <li class="card">
+              <img src="img/css-3.svg" alt="css" />
+              <div class="card-info">
+                <h2>CASCADING STYLE SHEET</h2>
+                <p>projects</p>
+                <div class="progress css"></div>
+              </div>
+              <h2 class="percentage">95%</h2>
+            </li>
+
+            <li class="card">
+              <img src="img/html-5.svg" alt="css" />
+              <div class="card-info">
+                <h2>HYPERTEXT MARKUP LANGUAGE</h2>
+                <p>projects</p>
+                <div class="progress html"></div>
+              </div>
+              <h2 class="percentage">90%</h2>
+            </li>
+
+            <li class="card">
+              <img src="img/javascript.svg" alt="css" />
+              <div class="card-info">
+                <h2>Javascript</h2>
+                <p>projects</p>
+                <div class="progress js"></div>
+              </div>
+              <h2 class="percentage">60%</h2>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelector(".glass"), {
+        max: 15,
+        speed: 400,
+      });
+    </script>
+  </body>
+</html>
